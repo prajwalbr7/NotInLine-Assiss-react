@@ -1,0 +1,192 @@
+.WhyCCont {
+  width: 100%;
+  background-image: url('https://img.freepik.com/premium-photo/stethoscope-laptop-tablet-pen-heart-blue-background-space-text_185193-6312.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+.WhyMainContainer {
+  width: 962px;
+  height: 878px;
+  margin-top: 200px;
+  margin-left: 84px;
+  border-radius: 33px;
+}
+.WhyHeading {
+  font: 'Montserrat';
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #2f2f2f;
+}
+.WhyHeadingSpan {
+  color: #008dd9;
+}
+.Vector21 {
+  width: 150px;
+  height: 15px;
+  margin-left: 425px;
+  position: relative;
+  top: -40px;
+}
+.WhyWePara {
+  font: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6e6e6e;
+  width: 700px;
+  height: 80px;
+  margin-left: 150px;
+  margin-top: 0px;
+}
+.ContainerRowToChooseUs {
+  display: flex;
+  align-items: flex-start;
+}
+.ContainerToWhyChooseUs {
+}
+.ContainerToWhyChooseUs1 {
+  position: relative;
+  bottom: -80px;
+}
+.WhyChooseContainerM {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 373px;
+  height: 226px;
+  border-radius: 33px;
+  box-shadow: 0px 4px 15px 0px #00000040;
+  padding: 10px 15px 10px 15px;
+  background-color: #ffffff;
+}
+.Ellipse14 {
+  align-self: flex-end;
+  position: relative;
+  top: -60px;
+  right: -30px;
+}
+.Ellipse14Heading {
+  font: 'Montserrat';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 258px;
+  position: relative;
+  top: -130px;
+  color: #2f2f2f;
+}
+.Ellipse14Para {
+  font: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2f2f2f;
+  position: relative;
+  top: -150px;
+  max-width: 278px;
+}
+.MarginToWhyChoose {
+  margin-bottom: 100px;
+}
+.MarginLeftToWhyChoose {
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .WhyCCont {
+    width: 312px;
+    height: 556px;
+    background-image: none;
+    margin-top: 90px;
+  }
+  .WhyMainContainer {
+    display: none;
+  }
+  .WhyWeChooseMobileView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .WhyHeading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0px;
+  }
+  .WhyWeParaMobileView {
+    font: 'Montserrat';
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6e6e6e;
+  }
+  .Vector21mobileView {
+    margin-left: 10px;
+    position: relative;
+    top: 0px;
+    width: 91px;
+    height: 8px;
+  }
+  .WhyChooseContainerMobileView {
+    width: 312px;
+    border-radius: 38.5px;
+    box-shadow: 0px 4px 15px 0px #00000040;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .WhyMobileViewRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Ellipse14 {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #ffffff;
+  }
+  .Ellipse14HeadingMobileView {
+    font: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2f2f2f;
+  }
+  .IconDropDownButton {
+    padding: 10px 0px 0px 0px;
+    background-color: transparent;
+    border-width: 0px;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  .Ellipse14ParaMobileView {
+    font: 'Montserrat';
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .WhyWeChooseMobileView {
+    display: none;
+  }
+}

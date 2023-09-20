@@ -1,0 +1,111 @@
+.HeaderContainer {
+  height: 83px;
+  display: flex;
+  align-items: center;
+}
+.Component10 {
+  width: 277px;
+  height: 64px;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+.HeaderUlContainer {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 423px;
+  height: 41.5px;
+  margin-top: 35.29px;
+  margin-left: 75px;
+}
+.list-styling {
+  font: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  cursor: pointer;
+}
+
+.lab-test {
+  color: #138ed1;
+  font-weight: 600;
+}
+.button-style-header {
+  width: 113px;
+  height: 35px;
+  margin-top: 22px;
+  margin-left: 35px;
+  border-radius: 4px;
+  border-width: 0px;
+  font: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #00486c;
+}
+.PlayStore-header {
+  width: 115px;
+  height: 35px;
+  margin-top: 22px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-width: 0px;
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.margin-top-Header-button {
+  margin-left: 75px;
+}
+.NavContainer {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .HeaderContainer {
+    display: none;
+  }
+  .NavMain {
+    width: 100%;
+  }
+  .NavContainer {
+    padding: 3px 8px 3px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .NavImage {
+    width: 127px;
+    height: 29px;
+  }
+  .NavButton {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-width: 0px;
+    box-shadow: 0px 4px 15px 0px #00000040;
+  }
+  .borderToPara {
+    border: solid 1px #000000;
+    margin: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-radius: 4px;
+  }
+}
