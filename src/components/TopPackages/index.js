@@ -1,9 +1,9 @@
 import {Component} from 'react'
-import {BsFillStarFill} from 'react-icons/bs'
-
+import {Link} from 'react-router-dom'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import {BsFillStarFill} from 'react-icons/bs'
 
 import './index.css'
 
@@ -42,6 +42,7 @@ class TopPackages extends Component {
         },
       ],
     }
+
     return (
       <>
         <div className="TopPackagesContainer">
@@ -53,6 +54,15 @@ class TopPackages extends Component {
             Explore our wide range of tests! We ensure that you don’t miss out
             on any chance to keep yourself healthy.
           </p>
+          <Link to="/ViewAllSpecialists" className="LinkStyle">
+            <button
+              className="ButtonArrow"
+              type="button"
+              onClick={this.ViewAllFolder}
+            >
+              VIEW ALL SPECIALISTS
+            </button>
+          </Link>
           <Slider {...settings} className="SliderContainer">
             <div className="SContainer">
               <div className="BasicMainContainer">
@@ -214,6 +224,13 @@ class TopPackages extends Component {
                 Book now
               </button>
             </div>
+          </div>
+          <div className="SeeAllContainer">
+            <Link to="/ViewAllSpecialists">
+              <button className="SeeAllButton" type="button">
+                See All
+              </button>
+            </Link>
           </div>
         </div>
       </>

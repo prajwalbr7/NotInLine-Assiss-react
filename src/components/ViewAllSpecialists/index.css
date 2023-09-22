@@ -1,0 +1,10 @@
+.ViewAllContainer {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ViewAllHeading {
+  color: #008dd9;
+  font-size: 40px;
+}

@@ -1,5 +1,6 @@
 import {useState} from 'react'
-import {IoLogoGooglePlaystore} from 'react-icons/io5'
+import {Link} from 'react-router-dom'
+import {IoLogoGooglePlaystore, IoCloseOutline} from 'react-icons/io5'
 
 import './index.css'
 
@@ -9,11 +10,19 @@ const Header = () => {
     setActive(prevState => !prevState)
   }
   const renderElements = () => (
-    <div className="">
-      <p className="list-styling borderToPara">Home</p>
+    <div className="navSubElementsDropDown">
+      <Link to="/" className="HeaderLinkStyle">
+        <p className="list-styling borderToPara">Home</p>
+      </Link>
       <p className="list-styling borderToPara">Health conditions</p>
-      <p className="list-styling lab-test borderToPara">Lab tests</p>
+      <p className="list-styling borderToPara">Lab tests</p>
       <p className="list-styling borderToPara">Medicines</p>
+      <button className="mobileViewNavButton" type="button">
+        For patients
+      </button>
+      <button className="mobileViewNavButton" type="button">
+        For hospitals
+      </button>
     </div>
   )
   return (
@@ -25,41 +34,39 @@ const Header = () => {
           className="Component10"
         />
         <ul className="HeaderUlContainer">
-          <li className="list-styling">Home</li>
+          <Link to="/" className="HeaderLinkStyle">
+            <li className="list-styling">Home</li>
+          </Link>
           <li className="list-styling">Health conditions</li>
-          <li className="list-styling lab-test">Lab tests</li>
+          <li className="list-styling">Lab tests</li>
           <li className="list-styling">Medicines</li>
         </ul>
-        <button className="button-style-header" type="button">
-          For patients
-        </button>
-        <button
-          className="button-style-header margin-top-Header-button"
-          type="button"
-        >
-          For hospitals
-        </button>
-        <button className="PlayStore-header" type="button">
-          <IoLogoGooglePlaystore color="#ffffff" /> Play store
-        </button>
-      </div>
-
-      <>
-        {' '}
-        <nav className="NavMain">
-          <div className="NavContainer">
-            <img
-              src="/img/Component 10.png"
-              alt="NavImg"
-              className="NavImage"
-            />
-            <button type="button" className="NavButton" onClick={ActiveState}>
-              ≡
+        <div className="ButtonHeaderRowContainer">
+          <div className="button1900">
+            <button className="button-style-header" type="button">
+              For patients
+            </button>
+            <button
+              className="button-style-header margin-top-Header-button"
+              type="button"
+            >
+              For hospitals
             </button>
           </div>
-          {Active && renderElements()}
-        </nav>
-      </>
+          <button className="PlayStore-header" type="button">
+            <IoLogoGooglePlaystore color="#ffffff" /> Play store
+          </button>
+        </div>
+      </div>
+      <nav className="NavMain">
+        <div className="NavContainer">
+          <img src="/img/Component 10.png" alt="NavImg" className="NavImage" />
+          <button type="button" className="NavButton" onClick={ActiveState}>
+            {Active ? <IoCloseOutline /> : '≡'}
+          </button>
+        </div>
+        {Active && renderElements()}
+      </nav>
     </>
   )
 }
